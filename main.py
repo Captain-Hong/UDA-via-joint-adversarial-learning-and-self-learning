@@ -77,7 +77,12 @@ def main():
     batch_size=8
     pred_model=torch.load('./checkpoint/exp/epoch_44_AttU_Netdice_no1_.pth')
     model_dict = pred_model.state_dict()
-    
+    #teacher_model indicates U1
+    #student_model indicates U2
+    #d_d1 indicates D1
+    #d_d1en indicates D2
+    #final_model indicatets the desired momdel U3 
+    #temp_momdel indicates U4
     teacher_model=AttU_Net(img_ch=1, num_classes=1)
     teacher_model.load_state_dict(model_dict)
     student_model=AttS_Net(img_ch=1, num_classes=1)
