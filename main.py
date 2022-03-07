@@ -81,8 +81,8 @@ def main():
     #student_model indicates U2
     #d_d1 indicates D1
     #d_d1en indicates D2
-    #final_model indicatets the desired momdel U3 
-    #temp_momdel indicates U4
+    #final_model indicatets the desired model U3 
+    #temp_model indicates U4
     teacher_model=AttU_Net(img_ch=1, num_classes=1)
     teacher_model.load_state_dict(model_dict)
     student_model=AttS_Net(img_ch=1, num_classes=1)
