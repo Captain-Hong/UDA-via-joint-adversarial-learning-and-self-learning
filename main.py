@@ -75,7 +75,7 @@ def pseudo_gtmask(output1,  exitlos):
 
 def main():
     batch_size=8
-    pred_model=torch.load('./checkpoint/exp/epoch_44_AttU_Netdice_no1_.pth')
+    pred_model=torch.load('./checkpoint/exp/pretrained_model_CT.pth')
     model_dict = pred_model.state_dict()
     #teacher_model indicates U1
     #student_model indicates U2
