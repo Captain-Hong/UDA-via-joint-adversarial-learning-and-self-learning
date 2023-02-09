@@ -5,7 +5,7 @@ Thanks!
 
 Notice!!
 
-Because many people are interested in this work, they encountered some problems when reproducing the results of the paper. In order to make it more convenient for everyone to participate in this work, I uploaded the pre-processed data, pre-training model and code to Google Cloud Disk and Baidu Netdisk. 
+Because many people are interested in this work, they encountered some problems when reproducing the results of the paper. In order to make it more convenient for everyone to participate in this work, I uploaded the pre-processed data, pre-trained model and code to Google Cloud Disk and Baidu Netdisk. 
 
 Baidu Netdisk:
 
