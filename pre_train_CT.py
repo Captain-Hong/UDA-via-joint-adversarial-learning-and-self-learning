@@ -17,7 +17,7 @@ from utils.loss import SoftDiceLoss,entropy_loss
 from utils.metrics import diceCoeffv2
 import utils.joint_transforms as joint_transforms
 import utils.transforms as extended_transforms
-from networks.final_model import AttSS_Net
+from networks.att_u_net import Attn_U_Net 
 from datasets import liver
 import torch.nn.functional as F
 import torch 
@@ -33,7 +33,7 @@ extra_description = ''
 n_class=1
 
 def main():
-    net = AttSS_Net(img_ch=1, num_classes=n_class).cuda()
+    net = Attn_U_Net(img_ch=1, num_classes=n_class).cuda()
 #    net.load_state_dict(torch.load("./checkpoint/exp/{}.pth".format('epoch_20'+'_'+model_name + loss_name + times + extra_description)))
 #    train_joint_transform = joint_transforms.Compose([
 #         joint_transforms.Scale(256),
